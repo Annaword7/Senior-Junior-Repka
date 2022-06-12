@@ -19,7 +19,11 @@ jobs:
       - name: Install poetry
         run: |
           pip3 install poetry
+      - name: Install dependences
+        run: |
+          poetry install
       - name: Test with pytest
         run: |
           poetry run pytest
+          
       
